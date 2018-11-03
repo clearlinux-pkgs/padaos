@@ -4,7 +4,7 @@
 #
 Name     : padaos
 Version  : 0.1.7
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/35/e0/ec50c08c5e8c5e049be9f841dae766c570e600c36730888be6cf1d317266/padaos-0.1.7.tar.gz
 Source0  : https://files.pythonhosted.org/packages/35/e0/ec50c08c5e8c5e049be9f841dae766c570e600c36730888be6cf1d317266/padaos-0.1.7.tar.gz
 Summary  : A rigid, lightweight, dead-simple intent parser
@@ -48,7 +48,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541264780
+export SOURCE_DATE_EPOCH=1541265359
 python3 setup.py build
 
 %install
