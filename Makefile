@@ -1,5 +1,5 @@
 PKG_NAME := padaos
-URL = https://files.pythonhosted.org/packages/35/e0/ec50c08c5e8c5e049be9f841dae766c570e600c36730888be6cf1d317266/padaos-0.1.7.tar.gz
+URL = https://files.pythonhosted.org/packages/1b/5a/8b9053ef320f958b52c8881e0a8147faea5dd87e0fbf26958b7069ab7f76/padaos-0.1.8.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
