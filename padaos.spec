@@ -4,7 +4,7 @@
 #
 Name     : padaos
 Version  : 0.1.8
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/1b/5a/8b9053ef320f958b52c8881e0a8147faea5dd87e0fbf26958b7069ab7f76/padaos-0.1.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1b/5a/8b9053ef320f958b52c8881e0a8147faea5dd87e0fbf26958b7069ab7f76/padaos-0.1.8.tar.gz
 Summary  : A rigid, lightweight, dead-simple intent parser
