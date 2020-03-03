@@ -4,7 +4,7 @@
 #
 Name     : padaos
 Version  : 0.1.10
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/7a/32/5a9d9110a1ad4731bcba99c9b1291e29d740b45717bd5b5ba7e72627008f/padaos-0.1.10.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7a/32/5a9d9110a1ad4731bcba99c9b1291e29d740b45717bd5b5ba7e72627008f/padaos-0.1.10.tar.gz
 Summary  : A rigid, lightweight, dead-simple intent parser
@@ -35,6 +35,7 @@ python components for the padaos package.
 Summary: python3 components for the padaos package.
 Group: Default
 Requires: python3-core
+Provides: pypi(padaos)
 
 %description python3
 python3 components for the padaos package.
@@ -42,13 +43,20 @@ python3 components for the padaos package.
 
 %prep
 %setup -q -n padaos-0.1.10
+cd %{_builddir}/padaos-0.1.10
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1555697752
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1583196453
+# -Werror is for werrorists
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
